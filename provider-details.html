@@ -1,0 +1,50 @@
+<!-- provider-details.html -->
+<section id="provider-details" class="provider-details">
+    <div class="container">
+        <h2>Provider Name (Restaurant Name)</h2>
+        <p>Location: XYZ</p>
+        <p>Contact: 123-456-7890</p>
+        <p>Rating: 4.5</p>
+        <p>Details: Description of the restaurant's services.</p>
+        <!-- Add other provider details here -->
+    </div><!--/.container-->
+</section>
+
+// In provider-details.html
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the ID from the URL
+    const params = new URLSearchParams(window.location.search);
+    const providerId = params.get('id');
+
+    // Example: Fetch provider details based on the ID
+    // You can replace this with an API call or a database query
+    const providerDetails = {
+        1: {
+            name: 'Provider 1',
+            location: 'XYZ',
+            contact: '123-456-7890',
+            rating: '4.5',
+            details: 'Details about Provider 1 services.'
+        },
+        2: {
+            name: 'Provider 2',
+            location: 'ABC',
+            contact: '987-654-3210',
+            rating: '4.7',
+            details: 'Details about Provider 2 services.'
+        }
+    };
+
+    const provider = providerDetails[providerId];
+    
+    if (provider) {
+        document.querySelector('h2').textContent = provider.name;
+        document.querySelector('p:nth-of-type(1)').textContent = `Location: ${provider.location}`;
+        document.querySelector('p:nth-of-type(2)').textContent = `Contact: ${provider.contact}`;
+        document.querySelector('p:nth-of-type(3)').textContent = `Rating: ${provider.rating}`;
+        document.querySelector('p:nth-of-type(4)').textContent = `Details: ${provider.details}`;
+    } else {
+        document.querySelector('h2').textContent = "Provider not found";
+    }
+});
