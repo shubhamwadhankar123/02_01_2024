@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Plumberz - Free Plumbing Website Template</title>
+    <title>Urban_Mitra - Plumber Service From Your Local Area</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -47,7 +47,7 @@
         <div class="row align-items-center top-bar">
             <div class="col-lg-3 col-md-12 text-center text-lg-start">
                 <a href="" class="navbar-brand m-0 p-0">
-                    <h1 class="text-primary m-0">Plumberz</h1>
+                    <h1 class="text-primary m-0">Urban_Mitra</h1>
                 </a>
             </div>
             <div class="col-lg-9 col-md-12 text-end">
@@ -75,7 +75,7 @@
     <div class="container-fluid nav-bar bg-light">
         <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4">
             <a href="" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
-                <h1 class="text-primary m-0">Plumberz</h1>
+                <h1 class="text-primary m-0">Urban_Mitra</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
@@ -123,8 +123,8 @@
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Plumbing & Repairing Services</h5>
                                 <h1 class="display-3 text-white animated slideInDown mb-4">Efficient Residential Plumbing Services</h1>
                                 <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Free Quote</a>
+                                
+                                
                             </div>
                         </div>
                     </div>
@@ -139,8 +139,8 @@
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Plumbing & Repairing Services</h5>
                                 <h1 class="display-3 text-white animated slideInDown mb-4">Efficient Commercial Plumbing Services</h1>
                                 <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Free Quote</a>
+                                
+                                
                             </div>
                         </div>
                     </div>
@@ -150,6 +150,302 @@
     </div>
     <!-- Carousel End -->
 
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search Form & Team Search</title>
+        <style>
+            /* Embedded CSS */
+            .search-container {
+                background-color: #f5f5f5;
+                padding: 30px 0;
+                border-radius: 8px;
+            }
+    
+            .search-box {
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            }
+    
+            .single-search-option h2 {
+                font-size: 16px;
+                margin-bottom: 10px;
+                color: #333;
+            }
+    
+            .model-select-icon select, .search-input {
+                width: 100%;
+                height: 40px;
+                padding: 5px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+    
+            .search-btn {
+                width: 100%;
+                padding: 10px;
+                font-size: 18px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+    
+            .search-btn:hover {
+                background-color: #0056b3;
+            }
+    
+            .team-item {
+                margin-bottom: 20px;
+            }
+    
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .single-search-option {
+                    margin-bottom: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+    <!-- Search Form Section -->
+    <div class="container search-container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="search-box">
+                    <div class="row">
+                        <!-- Year Selection -->
+                        <div class="col-md-2 col-sm-12">
+                            <div class="single-search-option">
+                                <h2>Select Year</h2>
+                                <div class="model-select-icon">
+                                    <select class="form-control" id="yearSelect">
+                                        <option value="default">Year</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Body Style -->
+                        <div class="col-md-2 col-sm-12">
+                            <div class="single-search-option">
+                                <h2>Body Style</h2>
+                                <div class="model-select-icon">
+                                    <select class="form-control" id="styleSelect">
+                                        <option value="default">Style</option>
+                                        <option value="sedan">Sedan</option>
+                                        <option value="van">Van</option>
+                                        <option value="roadster">Roadster</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more dropdowns as needed -->
+    
+                        <!-- Search Input for Team -->
+                        <div class="col-md-4 col-sm-12">
+                            <div class="single-search-option">
+                                <h2>Search Technicians</h2>
+                                <input type="text" class="form-control search-input" id="teamSearchInput" placeholder="Search by name or designation...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </html>
+    
+
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase">Our Technicians</h6>
+                <h1 class="mb-5">Our Expert Technicians</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        </div>
+                        <div class="team-text">
+                            <div class="bg-light">
+                                <h5 class="fw-bold mb-0">Vishal Chatarkar</h5>
+                                <small> plumber</small>
+                            </div>
+                            <div class="bg-primary">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        </div>
+                        <div class="team-text">
+                            <div class="bg-light">
+                                <h5 class="fw-bold mb-0">Rahul</h5>
+                                <small>water heater</small>
+                            </div>
+                            <div class="bg-primary">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        </div>
+                        <div class="team-text">
+                            <div class="bg-light">
+                                <h5 class="fw-bold mb-0">vijay</h5>
+                                <small>drain</small>
+                            </div>
+                            <div class="bg-primary">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 wow fadeInUp team-item" 
+                    data-wow-delay="0.7s" 
+                    data-name="shahrukh" 
+                    data-designation="Sewer Line"
+                    data-State = "Maharashtra"
+                    data-City = "Akola" 
+                    data-year="2018" 
+                    data-style="Van" 
+                    data-address="1234 Sewer St, Urban City" 
+                    data-mobile="+1234567890">
+                
+                    <div style="border: 1px solid #e5e5e5; border-radius: 10px; overflow: hidden; background-color: white;">
+                        <div class="position-relative overflow-hidden">
+                            <a href="profile.html?name=Shahrukh&designation=Sewer Line&State=Maharashtra&City=Akola&address=1234 Sewer St, Urban City&mobile=+1234567890&rating=4&img=img/team-4.jpg">
+                                <img class="img-fluid" src="img/team-4.jpg" alt="Technician Image" style="width: 100%; height: 250px; object-fit: cover; border-bottom: 2px solid #e5e5e5;">
+                            </a>
+                        </div>
+                        <div style="padding: 15px; text-align: left; overflow-y: auto;">
+                            <a href="profile.html?name=Shahrukh&designation=Sewer Line&State=Maharashtra&City=Akola&address=1234 Sewer St, Urban City&mobile=+1234567890&rating=4&img=img/team-4.jpg" style="text-decoration: none; color: inherit;">
+                                <h5 class="fw-bold mb-1" style="font-size: 1.25rem; text-align: center;">shahrukh</h5>
+                            </a>
+                            <small style="display: block; text-align: center; color: #777;">Sewer Line</small>
+                            <hr style="border: 0.5px solid #ddd;">
+                            <p style="font-size: 0.9rem; margin-bottom: 8px; word-wrap: break-word;"><strong>Address:</strong> 1234 Sewer St, Urban City</p>
+                            <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>State:</strong> Maharashtra</p>
+                            <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>City:</strong> Akola</p>
+                            <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>Mobile No:</strong> +1234567890</p>
+                            <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>Rating:</strong> ★★★★☆</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item" style="border: 1px solid #e5e5e5; border-radius: 10px; overflow: hidden; background-color: white;">
+                        <div class="position-relative overflow-hidden">
+                            <a href="profile.html?name=Kunal&designation=Sewer Line&address=1234 Sewer St, Urban City&mobile=+1234567890&rating=4&img=img/team-4.jpg">
+                                <img class="img-fluid" src="img/team-4.jpg" alt="Technician Image" style="width: 100%; height: 250px; object-fit: cover; border-bottom: 2px solid #e5e5e5;">
+                            </a>
+                        </div>
+                        <div class="team-text" style="padding: 15px; text-align: left; overflow-y: auto;">
+                            <a href="profile.html?name=Kunal&designation=Sewer Line&address=1234 Sewer St, Urban City&mobile=+1234567890&rating=4&img=img/team-4.jpg" style="text-decoration: none; color: inherit;">
+                                <h5 class="fw-bold mb-1" style="font-size: 1.25rem; text-align: center;">rohit</h5>
+                            </a>
+                            <small style="display: block; text-align: center; color: #777;">Sewer Line</small>
+                            <hr style="border: 0.5px solid #ddd;">
+                            <p style="font-size: 0.9rem; margin-bottom: 8px; word-wrap: break-word;"><strong>Address:</strong> 9531 Sewer St, Urban City</p>
+                            <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>State:</strong> Maharashtra</p>
+                            <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>City:</strong> Akola</p>
+                            <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>Mobile No:</strong> +1234567890</p>
+                            <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>Rating:</strong> ★★★★☆</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+
+
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                        </div>
+                        <div class="team-text">
+                            <div class="bg-light">
+                                <h5 class="fw-bold mb-0">kunal</h5>
+                                <small>sewer line</small>
+                            </div>
+                            <div class="bg-primary">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- JavaScript -->
+    <script>
+        // Add event listeners for search and filter inputs
+        document.getElementById('teamSearchInput').addEventListener('input', filterTeams);
+        document.getElementById('yearSelect').addEventListener('change', filterTeams);
+        document.getElementById('styleSelect').addEventListener('change', filterTeams);
+    
+        function filterTeams() {
+            let searchValue = document.getElementById('teamSearchInput').value.toLowerCase();
+            let selectedYear = document.getElementById('yearSelect').value;
+            let selectedStyle = document.getElementById('styleSelect').value;
+    
+            // Select all team items for filtering
+            let teamItems = document.querySelectorAll('.team-item');
+            
+            teamItems.forEach(item => {
+                // Fetch all relevant data from the team item
+                let name = item.getAttribute('data-name').toLowerCase();
+                let designation = item.getAttribute('data-designation').toLowerCase();
+                let address = item.getAttribute('data-address').toLowerCase();
+                let mobile = item.getAttribute('data-mobile').toLowerCase();
+                let year = item.getAttribute('data-year');
+                let style = item.getAttribute('data-style');
+    
+                // Combine all searchable fields for easier search logic
+                let allData = name + " " + designation + " " + address + " " + mobile;
+    
+                // Logic: If search matches any text in name, designation, address, mobile AND year/style filters match
+                if (allData.includes(searchValue) &&
+                    (selectedYear === 'default' || selectedYear === year) &&
+                    (selectedStyle === 'default' || selectedStyle === style)) {
+                    
+                    // Show the item if it matches
+                    item.style.display = 'block';
+                } else {
+                    // Hide the item if it does not match
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    
 
     <!-- Service Start -->
     <div class="container-xxl py-5">
@@ -188,39 +484,6 @@
     <!-- Service End -->
 
 
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="text-secondary text-uppercase">About Us</h6>
-                    <h1 class="mb-4">We Are Trusted Plumbing Company Since 1990</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Residential & commercial plumbing</p>
-                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Quality services at affordable prices</p>
-                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Immediate 24/ 7 emergency services</p>
-                    <div class="bg-primary d-flex align-items-center p-4 mt-5">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                            <i class="fa fa-phone-alt fa-2x text-primary"></i>
-                        </div>
-                        <div class="ms-3">
-                            <p class="fs-5 fw-medium mb-2 text-white">Emergency 24/7</p>
-                            <h3 class="m-0 text-secondary">+012 345 6789</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 pt-4" style="min-height: 500px;">
-                    <div class="position-relative h-100 wow fadeInUp" data-wow-delay="0.5s">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/about-1.jpg" style="object-fit: cover; padding: 0 0 50px 100px;" alt="">
-                        <img class="position-absolute start-0 bottom-0 img-fluid bg-white pt-2 pe-2 w-50 h-50" src="img/about-2.jpg" style="object-fit: cover;" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-
     <!-- Fact Start -->
     <div class="container-fluid fact bg-dark my-5 py-5">
         <div class="container">
@@ -255,8 +518,8 @@
     <div class="container-fluid py-5 px-4 px-lg-0">
         <div class="row g-0">
             <div class="col-lg-3 d-none d-lg-flex">
-                <div class="d-flex align-items-center justify-content-center bg-primary w-100 h-100">
-                    <h1 class="display-3 text-white m-0" style="transform: rotate(-90deg);">15 Years Experience</h1>
+                
+                    
                 </div>
             </div>
             <div class="col-md-12 col-lg-9">
@@ -389,91 +652,6 @@
     </div>
     <!-- Booking End -->
 
-
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-secondary text-uppercase">Our Technicians</h6>
-                <h1 class="mb-5">Our Expert Technicians</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                        </div>
-                        <div class="team-text">
-                            <div class="bg-light">
-                                <h5 class="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
-                            </div>
-                            <div class="bg-primary">
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                        </div>
-                        <div class="team-text">
-                            <div class="bg-light">
-                                <h5 class="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
-                            </div>
-                            <div class="bg-primary">
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                        </div>
-                        <div class="team-text">
-                            <div class="bg-light">
-                                <h5 class="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
-                            </div>
-                            <div class="bg-primary">
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                        </div>
-                        <div class="team-text">
-                            <div class="bg-light">
-                                <h5 class="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
-                            </div>
-                            <div class="bg-primary">
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
 
 
     <!-- Testimonial Start -->

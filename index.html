@@ -204,7 +204,7 @@
 								<div class="single-list-topics-icon">
 									<i class="flaticon-restaurant"></i>
 								</div>
-								<h2><a href="CATEGORY/Restaurant_Near_Me/index.html">Restaurant</a></h2>
+								<h2><a href="CATEGORY/PLUMBING_SERVICE/index.html">Restaurant</a></h2>
 								<p>120 listings</p>
 							</div>
 						</li>
@@ -213,7 +213,7 @@
 								<div class="single-list-topics-icon">
 									<i class="flaticon-travel"></i>
 								</div>
-								<h2><a href="CATEGORY/VEGETABLE_SERVICE/index.html">Vegetable Seller</a></h2>
+								<h2><a href="CATEGORY/PLUMBING_SERVICE/index.html">Vegetable Seller</a></h2>
 								<p>230 listings</p>
 							</div>
 						</li>
@@ -222,7 +222,7 @@
 								<div class="single-list-topics-icon">
 									<i class="flaticon-building"></i>
 								</div>
-								<h2><a href="CATEGORY/hotel/index.html">Hotels</a></h2>
+								<h2><a href="CATEGORY/PLUMBING_SERVICE/index.html">Hotels</a></h2>
 								<p>197 listings</p>
 							</div>
 						</li>
@@ -231,7 +231,7 @@
 								<div class="single-list-topics-icon">
 									<i class="fas fa-heartbeat"></i> <!-- Healthcare Service -->
 								</div>
-								<h2><a href="service-list.html?category=healthcare">Healthcare</a></h2>
+								<h2><a href="CATEGORY/PLUMBING_SERVICE/index.html">Healthcare</a></h2>
 								<p>200 listings</p>
 							</div>
 						</li>
@@ -240,7 +240,7 @@
 								<div class="single-list-topics-icon">
 									<i class="flaticon-transport"></i>
 								</div>
-								<h2><a href="service-list.html?category=automotive">Automotive</a></h2>
+								<h2><a href="CATEGORY/PLUMBING_SERVICE/index.html">Automotive</a></h2>
 								<p>120 listings</p>
 							</div>
 						</li>
@@ -249,7 +249,7 @@
 								<div class="single-list-topics-icon">
 									<i class="flaticon-pills"></i>
 								</div>
-								<h2><a href="CATEGORY/MEDICINE_DELIVERY/index.html">Medical Service</a></h2>
+								<h2><a href="CATEGORY/PLUMBING_SERVICE/index.html">Medical Service</a></h2>
 								<p>350 listings</p>
 							</div>
 						</li>
@@ -551,35 +551,49 @@
 
 		<!-- JavaScript code for search functionality -->
 		<script>
-			// Function to handle the search logic with OR condition
-			function handleSearch() {
-				// Get the input values
-				let serviceInput = document.getElementById('serviceInput').value.toLowerCase();
-				let locationInput = document.getElementById('locationInput').value.toLowerCase();
-	
-				// Get the list of service categories
-				let categories = document.querySelectorAll('.list-topics ul li');
-	
-				// Iterate through each category
-				categories.forEach(function (category) {
-					let categoryName = category.querySelector('h2 a').innerText.toLowerCase();
-					let categoryLocation = category.querySelector('p').innerText.toLowerCase(); // Assume location is stored in <p> tag
-	
-					// Check if either the service or location matches the input
-					if ((serviceInput && categoryName.includes(serviceInput)) || (locationInput && categoryLocation.includes(locationInput))) {
-						category.style.display = 'block';  // Show category if either matches
+			document.getElementById('teamSearchInput').addEventListener('input', function() {
+				filterTeams();
+			});
+		
+			document.getElementById('yearSelect').addEventListener('change', function() {
+				filterTeams();
+			});
+		
+			document.getElementById('styleSelect').addEventListener('change', function() {
+				filterTeams();
+			});
+		
+			function filterTeams() {
+				let searchValue = document.getElementById('teamSearchInput').value.toLowerCase();
+				let selectedYear = document.getElementById('yearSelect').value;
+				let selectedStyle = document.getElementById('styleSelect').value;
+		
+				let teamItems = document.querySelectorAll('.team-item');
+				teamItems.forEach(item => {
+					let name = item.getAttribute('data-name').toLowerCase();
+					let designation = item.getAttribute('data-designation').toLowerCase();
+					let address = item.getAttribute('data-address').toLowerCase();
+					let mobile = item.getAttribute('data-mobile').toLowerCase();
+					let year = item.getAttribute('data-year');
+					let style = item.getAttribute('data-style');
+		
+					// Filtering logic: name/designation/address/mobile, year, and style match
+					if (
+						(name.includes(searchValue) || 
+						designation.includes(searchValue) || 
+						address.includes(searchValue) || 
+						mobile.includes(searchValue)) &&
+						(selectedYear === 'default' || selectedYear === year) &&
+						(selectedStyle === 'default' || selectedStyle === style)
+					) {
+						item.style.display = 'block';
 					} else {
-						category.style.display = 'none';   // Hide category if neither matches
+						item.style.display = 'none';
 					}
 				});
 			}
-	
-			// Attach the search function to the button
-			document.querySelector('.welcome-hero-btn').addEventListener('click', function (event) {
-				event.preventDefault(); // Prevent form from submitting
-				handleSearch();         // Call the search function
-			});
 		</script>
+		
 	
 
 		<!--works start -->

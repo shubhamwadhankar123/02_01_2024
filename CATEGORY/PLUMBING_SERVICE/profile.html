@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .profile-header {
+            text-align: center;
+        }
+        .profile-header img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 4px solid #ddd;
+        }
+        .profile-header h1 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+        .profile-header p {
+            font-size: 1.1rem;
+            color: #777;
+        }
+        .profile-details {
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        .profile-details p {
+            margin: 10px 0;
+        }
+        .profile-details strong {
+            color: #333;
+        }
+        .book-btn {
+            display: block;
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 30px;
+        }
+        .book-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-header">
+            <img id="profile-image" src="" alt="Profile Photo">
+            <h1 id="profile-name"></h1>
+            <p id="profile-designation"></p>
+        </div>
+
+        <div class="profile-details">
+            <p><strong>Address:</strong> <span id="profile-address"></span></p>
+            <p><strong>State:</strong> <span id="profile-State"></span></p>
+            <p><strong>City:</strong> <span id="profile-City"></span></p>
+            <p><strong>Mobile No:</strong> <span id="profile-mobile"></span></p>
+            <p><strong>Rating:</strong> <span id="profile-rating"></span> ★</p>
+        </div>
+
+        <a href="#" class="book-btn">Book Your Service Now</a>
+    </div>
+
+    <script>
+        // Function to get query parameters from URL
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                name: params.get('name'),
+                designation: params.get('designation'),
+                address: params.get('address'),
+                State: params.get('State'),
+                City: params.get('City'),
+                mobile: params.get('mobile'),
+                rating: params.get('rating'),
+                img: params.get('img')
+            };
+        }
+
+        // Get the data from URL query parameters
+        const profileData = getQueryParams();
+
+        // Populate the profile page with data
+        document.getElementById('profile-name').textContent = profileData.name;
+        document.getElementById('profile-designation').textContent = profileData.designation;
+        document.getElementById('profile-address').textContent = profileData.address;
+        document.getElementById('profile-State').textContent = profileData.State;
+        document.getElementById('profile-City').textContent = profileData.City;
+        document.getElementById('profile-mobile').textContent = profileData.mobile;
+        document.getElementById('profile-rating').textContent = profileData.rating;
+        document.getElementById('profile-image').src = profileData.img;
+    </script>
+
+</body>
+</html>
